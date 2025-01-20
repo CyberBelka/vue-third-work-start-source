@@ -195,7 +195,7 @@ const columnTasks = normalizedTasks
 
       content: "";
 
-      background-image: url("../img/icon-add.svg");
+      background-image: url("@/assets/img/icon-add.svg");
     }
   }
 
