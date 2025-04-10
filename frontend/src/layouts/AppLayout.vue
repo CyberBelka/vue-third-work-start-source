@@ -13,7 +13,9 @@ watch(
     try {
       if (meta.layout) {
         // Пробуем найти компонент из свойства meta и динамически импортировать его
-        const component = await import(`./${meta.layout}.vue`);
+        const component = await import(
+          /* @vite-ignore */ `./${meta.layout}.vue`
+        );
         layout.value = component?.default || AppLayoutDefault;
       } else {
         layout.value = AppLayoutDefault;
